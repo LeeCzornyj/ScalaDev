@@ -1,0 +1,21 @@
++ - * / all standard as is % for mod
+
+relational operators of
+== != <= >= < > all standard as well
+
+logical operators of
+&& || ! still the same
+
+Assignment operators
+= standard
++= - C+=A > C = C+A
+-= - C-=A > C = C-A
+*= - C*=A > C = C*A
+/= - C/=A > C = C/A
+%= - C%=A > C = C%A
+
+given 2 vals such as List(1,2,3) and List(4,5,6)
+can use ne or eq to compare the 2
+i.e
+list1 ne list2 = true
+list1 eq list2 = false
