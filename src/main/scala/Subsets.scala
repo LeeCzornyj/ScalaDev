@@ -24,6 +24,17 @@ object Subsets {
 
     //using "set retain(x => x > y) will keep everything in the set above y, have to use scala.collection.mutible.Set
     //though for that to work
+
+
+    val sets = scala.collection.mutable.Set(1,2,3,4,5)
+    sets.update(
+      666,
+      if (sets.nonEmpty)
+        true
+      else
+        false
+    )
+    println(sets)
   }
 
 }
