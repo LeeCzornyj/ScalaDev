@@ -15,5 +15,4 @@ object IterationsAndCollections {
     sum // this will be evaluated to 15, as it adds up all the values inside the list
 
   }
-
 }
