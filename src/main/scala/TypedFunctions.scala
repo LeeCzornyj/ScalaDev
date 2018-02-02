@@ -1,3 +1,4 @@
+
 object TypedFunctions {
 
   def main(args: Array[String]): Unit = {
@@ -19,6 +20,7 @@ object TypedFunctions {
     }
 
 
+    //Not sure how this works tbh, the basic matching made sense, but the new format doesnt make sense to me
     def appplyDiscount[T](discount: T): List[T] = {
       discount match {
         case disc: String => List[T](discount)
@@ -27,6 +29,25 @@ object TypedFunctions {
       }
     }
     applyDiscountt("10%")
+
+    def giveListBack[T](items: T*): Unit = items.
+      foreach(print(_))
+    giveListBack("H", 3, "ll", "o")
+
+
+    class BeerPrice{
+      val price: Double = 3.5
+      def substractFromPrice(discount: Double) = price - price * discount
+    }
+    val beerPrice = new BeerPrice
+    println(f"Your total after the discount comes to:${beerPrice.substractFromPrice(0.1)}")
+
+    class BeerPrices{
+      val price: Double = 3.5
+      def -(discount: Double) = price - price * discount
+    }
+    val beerPrices = new BeerPrices
+    println(f"Your total after the discount comes to: ${beerPrices - 0.1}")
   }
 
 }
